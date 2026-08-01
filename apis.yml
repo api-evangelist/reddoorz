@@ -1,8 +1,29 @@
 aid: reddoorz
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/reddoorz.png
 name: RedDoorz
-description: RedDoorz is a company surfaced as a portfolio company of 500-global, qiming and added to
-  the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  RedDoorz is a Southeast Asian budget-hospitality technology company that
+  operates a franchise and management network of economy hotels and rooms across
+  Indonesia, Singapore, the Philippines, Vietnam, and Thailand. Through its
+  consumer website and mobile apps travelers can search, book, and pay for
+  value-priced stays, while its "List your property" program onboards independent
+  hotel owners onto the RedDoorz brand, distribution, loyalty, and
+  property-management platform. Backed by 500 Global and Qiming Venture Partners,
+  the company operates a consumer booking product rather than a public developer
+  platform; as of this pass it does not publish a public developer API, developer
+  portal, or /.well-known discovery surface. This profile tracks the company's
+  digital and security surface for the API Evangelist network.
 url: https://raw.githubusercontent.com/api-evangelist/reddoorz/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,9 +34,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Hospitality
+- Travel
+- Hotels
+- Booking
+- Property Management
+- Southeast Asia
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +50,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/reddoorz-domain-security.yml
 - type: Website
   url: https://reddoorz.com
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
